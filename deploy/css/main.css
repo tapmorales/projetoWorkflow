@@ -1,0 +1,40 @@
+body {
+  background: #ccc;
+  font-family: arial, sans-serif; }
+
+.mainHeader {
+  font-size: 1.3em; }
+  .textshadow .mainHeader {
+    color: #bbb;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6); }
+  .no-textshadow .mainHeader {
+    color: #717171; }
+
+.buttonsContainer {
+  border-top: 2px solid #A5A5A5; }
+  .buttonsContainer .buttonsContainer__button {
+    background-image: linear-gradient(to top, #898989, #AFAFAF);
+    border: none;
+    padding: 1em;
+    margin: 1em 0;
+    cursor: pointer;
+    outline: none; }
+    .buttonsContainer .buttonsContainer__button:hover {
+      background-image: linear-gradient(to top, #AFAFAF, #898989); }
+    .buttonsContainer .buttonsContainer__button:active {
+      background-image: linear-gradient(to top, #8b8b8b, #585858); }
+  .buttonsContainer .buttonsContainer__button--hightlight {
+    background-image: linear-gradient(to top, #b30000, red);
+    border: none;
+    padding: 1em;
+    margin: 1em 0;
+    cursor: pointer;
+    outline: none; }
+    .buttonsContainer .buttonsContainer__button--hightlight:hover {
+      background-image: linear-gradient(to top, red, #b30000); }
+    .buttonsContainer .buttonsContainer__button--hightlight:active {
+      background-image: linear-gradient(to top, #b80000, #520000); }
+  .buttonsContainer .buttonsContainer__result--number {
+    font-weight: bold; }
+
+/*# sourceMappingURL=main.css.map */

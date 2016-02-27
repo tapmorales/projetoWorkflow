@@ -1,0 +1,33 @@
+@mixin gerarBotao($cor){
+    background-image: linear-gradient(to top, darken($cor, 15), $cor);
+    border: none;
+    padding: 1em;
+    margin: 1em 0;
+    cursor: pointer;
+    outline: none; 
+
+    &:hover{
+        background-image: linear-gradient(to top, $cor, darken($cor, 15));
+    }
+    &:active{
+        background-image: linear-gradient(to top, darken($cor, 14), darken($cor, 34));
+    }
+}
+
+.buttonsContainer{
+
+    border-top: 2px solid #A5A5A5;
+
+    .buttonsContainer__button{
+        @include gerarBotao(#AFAFAF)
+    }
+
+    .buttonsContainer__button--hightlight{
+        @include gerarBotao(red)
+    }
+
+    .buttonsContainer__result--number{
+        font-weight: bold;
+    }
+
+}
